@@ -133,6 +133,7 @@ extern "C"
         ScResourceArray push_constant_buffers;
         ScResourceArray separate_images;
         ScResourceArray separate_samplers;
+        ScResourceArray acceleration_structures;
     } ScShaderResources;
 
     typedef struct ScSpecializationConstant

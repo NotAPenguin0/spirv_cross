@@ -30,7 +30,6 @@ fn main() {
         .opaque_type("std::.*")
         .clang_args(vec![
             "-DSPIRV_CROSS_WRAPPER_GLSL",
-            "-DSPIRV_CROSS_WRAPPER_MSL",
             "-DSPIRV_CROSS_WRAPPER_HLSL",
         ])
         .layout_tests(false)
@@ -58,11 +57,9 @@ fn main() {
         .rustified_enum("spv::Dim")
         .rustified_enum("ScInternalResult")
         .rustified_enum("spirv_cross::SPIRType_BaseType")
-        .rustified_enum("spirv_cross::MSLVertexFormat")
         .opaque_type("std::.*")
         .clang_args(vec![
             "-DSPIRV_CROSS_WRAPPER_GLSL",
-            "-DSPIRV_CROSS_WRAPPER_MSL",
             "-DSPIRV_CROSS_WRAPPER_HLSL",
         ])
         .layout_tests(false)

@@ -5,15 +5,11 @@ authors = ["Joshua Groves <josh@joshgroves.com>"]
 edition = "2018"
 
 [dependencies]
-spirv_cross = { path = "../spirv_cross", features = ["hlsl", "msl", "glsl"] }
+spv-cross = { path = "../spirv_cross", features = ["hlsl", "glsl"] }
 
 [[bin]]
 name = "hlsl"
 path = "src/hlsl/main.rs"
-
-[[bin]]
-name = "msl"
-path = "src/msl/main.rs"
 
 [[bin]]
 name = "glsl"

@@ -673,6 +673,7 @@ impl<TTargetData> Compiler<TTargetData> {
                 fill_resources(&shader_resources_raw.push_constant_buffers)?;
             let separate_images = fill_resources(&shader_resources_raw.separate_images)?;
             let separate_samplers = fill_resources(&shader_resources_raw.separate_samplers)?;
+            let acceleration_structures = fill_resources(&shader_resources_raw.acceleration_structures)?;
 
             Ok(spirv::ShaderResources {
                 uniform_buffers,
@@ -686,6 +687,7 @@ impl<TTargetData> Compiler<TTargetData> {
                 push_constant_buffers,
                 separate_images,
                 separate_samplers,
+                acceleration_structures,
             })
         }
     }

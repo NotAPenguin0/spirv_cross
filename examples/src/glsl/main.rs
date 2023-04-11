@@ -1,7 +1,7 @@
 extern crate examples;
-extern crate spirv_cross;
+extern crate spv_cross;
 use examples::words_from_bytes;
-use spirv_cross::{glsl, spirv};
+use spv_cross::{glsl, spirv};
 
 fn main() {
     let module = spirv::Module::from_words(words_from_bytes(include_bytes!("../vertex.spv")));

@@ -340,6 +340,7 @@ pub struct ShaderResources {
     pub push_constant_buffers: Vec<Resource>,
     pub separate_images: Vec<Resource>,
     pub separate_samplers: Vec<Resource>,
+    pub acceleration_structures: Vec<Resource>,
 }
 
 #[derive(Debug, Clone)]
