@@ -12,7 +12,11 @@
 ## Disclaimer
 
 This is a continued version of [spirv-cross](https://crates.io/crates/spirv_cross) with updated dependencies. MSL is currently not supported.
-All credit for the original version goes to [Joshua Groves](https://github.com/grovesNL).
+All credit for the original version goes to [Joshua Groves](https://github.com/grovesNL). If possible, I would merge the changes in this crate into the original repo (after fixing
+MSL).
+
+Additional features of this fork compared to the original: 
+- Acceleration structures.
 
 ## Example
 
