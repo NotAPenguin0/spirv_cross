@@ -20,6 +20,11 @@ impl spirv::ExecutionModel {
             Em::ExecutionModelFragment => Ok(Fragment),
             Em::ExecutionModelGLCompute => Ok(GlCompute),
             Em::ExecutionModelKernel => Ok(Kernel),
+            Em::ExecutionModelRayGenerationKHR => Ok(RayGenerationKHR),
+            Em::ExecutionModelMissKHR => Ok(MissKHR),
+            Em::ExecutionModelClosestHitKHR => Ok(ClosestHitKHR),
+            Em::ExecutionModelIntersectionKHR => Ok(IntersectionKHR),
+            Em::ExecutionModelAnyHitKHR => Ok(AnyHitKHR),
             _ => Err(ErrorCode::Unhandled),
         }
     }
