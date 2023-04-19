@@ -12,14 +12,20 @@ pub struct CombinedImageSampler {
 
 /// A stage or compute kernel.
 #[derive(Copy, Clone, Debug, Hash, Eq, PartialEq, Ord, PartialOrd)]
+#[repr(i32)]
 pub enum ExecutionModel {
-    Vertex,
-    TessellationControl,
-    TessellationEvaluation,
-    Geometry,
-    Fragment,
-    GlCompute,
-    Kernel,
+    Vertex = 0,
+    TessellationControl = 1,
+    TessellationEvaluation = 2,
+    Geometry = 3,
+    Fragment = 4,
+    GlCompute = 5,
+    Kernel = 6,
+    RayGenerationKHR = 5313,
+    IntersectionKHR = 5314,
+    AnyHitKHR = 5315,
+    ClosestHitKHR = 5316,
+    MissKHR = 5317,
 }
 
 /// A decoration.

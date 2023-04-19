@@ -1,7 +1,7 @@
 //! Raw compiler bindings for SPIRV-Cross.
 use crate::{bindings as br, spirv::ImageType};
 use crate::ptr_util::{read_from_ptr, read_into_vec_from_ptr, read_string_from_ptr};
-use crate::spirv::{self, Decoration, Type};
+use crate::spirv::{self, Decoration, ExecutionModel, Type};
 use crate::ErrorCode;
 use std::collections::HashSet;
 use std::ffi::CString;
@@ -35,6 +35,11 @@ impl spirv::ExecutionModel {
             Fragment => Em::ExecutionModelFragment,
             GlCompute => Em::ExecutionModelGLCompute,
             Kernel => Em::ExecutionModelKernel,
+            RayGenerationKHR => Em::ExecutionModelRayGenerationKHR,
+            IntersectionKHR => Em::ExecutionModelIntersectionKHR,
+            AnyHitKHR => Em::ExecutionModelAnyHitKHR,
+            ClosestHitKHR => Em::ExecutionModelClosestHitKHR,
+            MissKHR => Em::ExecutionModelMissKHR,
         }
     }
 }
