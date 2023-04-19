@@ -1,6 +1,6 @@
 [package]
 name = "spv-cross"
-version = "0.23.3"
+version = "0.23.4"
 authors = ["NotAPenguin", "Joshua Groves <josh@joshgroves.com>"]
 description = "Safe wrapper around SPIRV-Cross"
 license = "MIT/Apache-2.0"
